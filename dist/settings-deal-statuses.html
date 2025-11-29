@@ -1,0 +1,426 @@
+
+<html>
+    <head>
+        <title>Deal statuses</title>
+        <meta charset="UTF-8"/>
+        <link rel="stylesheet" type="text/css" href="css/app.css?v=0.06"/>
+    </head>
+    <body>
+        <div class="app">
+            <div class="app__wrapper app__wrapper_page-type_inner">
+                <aside class="left-bar">
+                    <div class="left-bar__expander"><a class="button button_no-text button_size_xs button_rounded button_color_secondary" href="#">
+                            <svg class="icon icon_type_chevron-left">
+                                <use xlink:href="i/sprite/sprite.svg#chevron-left"></use>
+                            </svg></a>
+                    </div>
+                    <div class="left-bar__inner">
+                        <div class="left-bar__logo-wrapper"><a class="logo"><img src="i/logo/logo-light.svg" alt="OpenCrm"/></a>
+                        </div>
+                        <div class="main-menu">
+                            <div class="main-menu__profile-item"><a class="main-menu__link" href="profile.html">
+                                    <div class="user-avatar user-avatar_size_s">
+                                        <div class="user-avatar__wrapper"><img class="user-avatar__image" src="i/avatar-example.jpg" alt="avatar"/>
+                                        </div>
+                                    </div>
+                                    <div class="main-menu__link-title">Иван Иванов
+                                    </div></a><a class="main-menu__link" href="#logout">
+                                    <svg class="icon_size_s icon icon_type_logout">
+                                        <use xlink:href="i/sprite/sprite.svg#logout"></use>
+                                    </svg></a>
+                            </div>
+                            <div class="main-menu__item"><a class="main-menu__link" href="users.html">
+                                    <svg class="icon icon_type_user-group">
+                                        <use xlink:href="i/sprite/sprite.svg#user-group"></use>
+                                    </svg>
+                                    <div class="main-menu__link-title">Пользователи
+                                    </div>
+                                    <div class="main-menu__control">
+                                        <svg class="icon icon_type_chevron-right">
+                                            <use xlink:href="i/sprite/sprite.svg#chevron-right"></use>
+                                        </svg>
+                                    </div></a>
+                            </div>
+                            <div class="main-menu__item  main-menu__item_active"><a class="main-menu__link" href="company-groups.html">
+                                    <svg class="icon icon_type_office-building">
+                                        <use xlink:href="i/sprite/sprite.svg#office-building"></use>
+                                    </svg>
+                                    <div class="main-menu__link-title">Группы компаний
+                                    </div>
+                                    <div class="main-menu__control">
+                                        <svg class="icon icon_type_chevron-right">
+                                            <use xlink:href="i/sprite/sprite.svg#chevron-right"></use>
+                                        </svg>
+                                    </div></a>
+                            </div>
+                            <div class="main-menu__item"><a class="main-menu__link" href="contractors.html">
+                                    <svg class="icon icon_type_share">
+                                        <use xlink:href="i/sprite/sprite.svg#share"></use>
+                                    </svg>
+                                    <div class="main-menu__link-title">Контрагенты
+                                    </div>
+                                    <div class="main-menu__control">
+                                        <svg class="icon icon_type_chevron-right">
+                                            <use xlink:href="i/sprite/sprite.svg#chevron-right"></use>
+                                        </svg>
+                                    </div></a>
+                            </div>
+                            <div class="main-menu__item"><a class="main-menu__link" href="contracts.html">
+                                    <svg class="icon icon_type_document-text">
+                                        <use xlink:href="i/sprite/sprite.svg#document-text"></use>
+                                    </svg>
+                                    <div class="main-menu__link-title">Контракты
+                                    </div>
+                                    <div class="main-menu__control">
+                                        <svg class="icon icon_type_chevron-right">
+                                            <use xlink:href="i/sprite/sprite.svg#chevron-right"></use>
+                                        </svg>
+                                    </div></a>
+                            </div>
+                            <div class="main-menu__item"><a class="main-menu__link" href="deals.html">
+                                    <svg class="icon icon_type_receipt-tax">
+                                        <use xlink:href="i/sprite/sprite.svg#receipt-tax"></use>
+                                    </svg>
+                                    <div class="main-menu__link-title">Сделки
+                                    </div>
+                                    <div class="main-menu__control">
+                                        <svg class="icon icon_type_chevron-right">
+                                            <use xlink:href="i/sprite/sprite.svg#chevron-right"></use>
+                                        </svg>
+                                    </div></a>
+                            </div>
+                            <div class="main-menu__item  main-menu__item_has-sub-items main-menu__item_expanded"><a class="main-menu__link" href="settings.html">
+                                    <svg class="icon icon_type_cog">
+                                        <use xlink:href="i/sprite/sprite.svg#cog"></use>
+                                    </svg>
+                                    <div class="main-menu__link-title">Настройки
+                                    </div>
+                                    <div class="main-menu__control">
+                                        <svg class="icon icon_type_plus">
+                                            <use xlink:href="i/sprite/sprite.svg#plus"></use>
+                                        </svg>
+                                        <svg class="icon icon_type_minus">
+                                            <use xlink:href="i/sprite/sprite.svg#minus"></use>
+                                        </svg>
+                                    </div></a>
+                                <div class="main-menu__sub-items">
+                                    <div class="main-menu__item"><a class="main-menu__link" href="settings-roles.html">
+                                            <svg class="icon icon_type_shield-exclamation">
+                                                <use xlink:href="i/sprite/sprite.svg#shield-exclamation"></use>
+                                            </svg>
+                                            <div class="main-menu__link-title">Роли и права
+                                            </div>
+                                            <div class="main-menu__control">
+                                                <svg class="icon icon_type_chevron-right">
+                                                    <use xlink:href="i/sprite/sprite.svg#chevron-right"></use>
+                                                </svg>
+                                            </div></a>
+                                    </div>
+                                    <div class="main-menu__item  main-menu__item_active"><a class="main-menu__link" href="settings-deal-statuses.html">
+                                            <svg class="icon icon_type_view-boards">
+                                                <use xlink:href="i/sprite/sprite.svg#view-boards"></use>
+                                            </svg>
+                                            <div class="main-menu__link-title">Статусы сделок
+                                            </div>
+                                            <div class="main-menu__control">
+                                                <svg class="icon icon_type_chevron-right">
+                                                    <use xlink:href="i/sprite/sprite.svg#chevron-right"></use>
+                                                </svg>
+                                            </div></a>
+                                    </div>
+                                    <div class="main-menu__item"><a class="main-menu__link" href="settings-custom-fields.html">
+                                            <svg class="icon icon_type_table">
+                                                <use xlink:href="i/sprite/sprite.svg#table"></use>
+                                            </svg>
+                                            <div class="main-menu__link-title">Настройка доп. полей
+                                            </div>
+                                            <div class="main-menu__control">
+                                                <svg class="icon icon_type_chevron-right">
+                                                    <use xlink:href="i/sprite/sprite.svg#chevron-right"></use>
+                                                </svg>
+                                            </div></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+                <div class="app__main">
+                    <div class="main-content">
+                        <div class="main-content__head">
+                            <div class="main-content__head-row">
+                                <div class="main-content__title">Статусы сделок
+                                </div>
+                            </div>
+                            <div class="main-content__head-row">
+                                <div class="main-content__description">Добавьте статусы, через которые проходит сделка в вашей бизнес-модели. Начальный и конечный статус являются неудаляемыми. Перед начальным и после конечного статуса нельзя добавить новые.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="main-content__body">
+                            <div class="settings-deal-statuses">
+                                <div class="dialog-deal-status">
+                                    <div class="dialog-deal-status__fixed-state-wrapper">
+                                        <div class="dialog-deal-status__title">1
+                                            /
+                                            Новая
+                                        </div>
+                                        <div class="dialog-deal-status__description">Статус по-умолчанию для новой создаваемой сделки
+                                        </div>
+                                        <div class="dialog-deal-status__buttons"><a class="button button_size_xs" href="#">
+                                                <svg class="icon icon_type_pencil">
+                                                    <use xlink:href="i/sprite/sprite.svg#pencil"></use>
+                                                </svg><span>Изменить</span></a>
+                                        </div>
+                                    </div>
+                                    <div class="dialog-deal-status__editable-state-wrapper">
+                                        <div class="dialog-deal-status__close">
+                                            <svg class="icon_size_xs icon icon_type_x">
+                                                <use xlink:href="i/sprite/sprite.svg#x"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="dialog-deal-status__fields">
+                                            <div class="textbox textbox_size_s">
+                                                <label class="textbox__wrapper">
+                                                    <div class="textbox__label">Название статуса
+                                                    </div>
+                                                    <input class="textbox__input" type="text" placeholder="Название статуса" value="Новая"/>
+                                                </label>
+                                            </div>
+                                            <div class="textbox textbox_size_s">
+                                                <label class="textbox__wrapper">
+                                                    <div class="textbox__label">Описание статуса
+                                                    </div>
+                                                    <textarea class="textbox__input" placeholder="Описание статуса"></textarea>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="dialog-deal-status__buttons"><a class="button button_size_xs" href="#">
+                                                <svg class="icon icon_type_check">
+                                                    <use xlink:href="i/sprite/sprite.svg#check"></use>
+                                                </svg><span>Сохранить</span></a><a class="button button_size_xs button_transparent button_color_secondary" href="#">
+                                                <svg class="icon icon_type_x">
+                                                    <use xlink:href="i/sprite/sprite.svg#x"></use>
+                                                </svg><span>Отменить</span></a>
+                                        </div>
+                                    </div>
+                                </div><a class="button button_no-text button_transparent button_size_s" href="#">
+                                    <svg class="icon icon_type_plus-circle">
+                                        <use xlink:href="i/sprite/sprite.svg#plus-circle"></use>
+                                    </svg></a>
+                                <div class="dialog-deal-status dialog-deal-status_editable">
+                                    <div class="dialog-deal-status__fixed-state-wrapper">
+                                        <div class="dialog-deal-status__title">2
+                                            /
+                                            В работе
+                                        </div>
+                                        <div class="dialog-deal-status__description">Статус по-умолчанию для новой создаваемой сделки
+                                        </div>
+                                        <div class="dialog-deal-status__buttons"><a class="button button_size_xs" href="#">
+                                                <svg class="icon icon_type_pencil">
+                                                    <use xlink:href="i/sprite/sprite.svg#pencil"></use>
+                                                </svg><span>Изменить</span></a>
+                                        </div>
+                                    </div>
+                                    <div class="dialog-deal-status__editable-state-wrapper">
+                                        <div class="dialog-deal-status__close">
+                                            <svg class="icon_size_xs icon icon_type_x">
+                                                <use xlink:href="i/sprite/sprite.svg#x"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="dialog-deal-status__fields">
+                                            <div class="textbox textbox_size_s">
+                                                <label class="textbox__wrapper">
+                                                    <div class="textbox__label">Название статуса
+                                                    </div>
+                                                    <input class="textbox__input" type="text" placeholder="Название статуса" value="В работе"/>
+                                                </label>
+                                            </div>
+                                            <div class="textbox textbox_size_s">
+                                                <label class="textbox__wrapper">
+                                                    <div class="textbox__label">Описание статуса
+                                                    </div>
+                                                    <textarea class="textbox__input" placeholder="Описание статуса"></textarea>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="dialog-deal-status__buttons"><a class="button button_size_xs" href="#">
+                                                <svg class="icon icon_type_check">
+                                                    <use xlink:href="i/sprite/sprite.svg#check"></use>
+                                                </svg><span>Сохранить</span></a><a class="button button_size_xs button_transparent button_color_secondary" href="#">
+                                                <svg class="icon icon_type_x">
+                                                    <use xlink:href="i/sprite/sprite.svg#x"></use>
+                                                </svg><span>Отменить</span></a>
+                                        </div>
+                                    </div>
+                                </div><a class="button button_no-text button_transparent button_size_s" href="#">
+                                    <svg class="icon icon_type_plus-circle">
+                                        <use xlink:href="i/sprite/sprite.svg#plus-circle"></use>
+                                    </svg></a>
+                                <div class="dialog-deal-status">
+                                    <div class="dialog-deal-status__fixed-state-wrapper">
+                                        <div class="dialog-deal-status__title">3
+                                            /
+                                            На согласовании
+                                        </div>
+                                        <div class="dialog-deal-status__description">Статус по-умолчанию для новой создаваемой сделки
+                                        </div>
+                                        <div class="dialog-deal-status__buttons"><a class="button button_size_xs" href="#">
+                                                <svg class="icon icon_type_pencil">
+                                                    <use xlink:href="i/sprite/sprite.svg#pencil"></use>
+                                                </svg><span>Изменить</span></a>
+                                        </div>
+                                    </div>
+                                    <div class="dialog-deal-status__editable-state-wrapper">
+                                        <div class="dialog-deal-status__close">
+                                            <svg class="icon_size_xs icon icon_type_x">
+                                                <use xlink:href="i/sprite/sprite.svg#x"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="dialog-deal-status__fields">
+                                            <div class="textbox textbox_size_s">
+                                                <label class="textbox__wrapper">
+                                                    <div class="textbox__label">Название статуса
+                                                    </div>
+                                                    <input class="textbox__input" type="text" placeholder="Название статуса" value="На согласовании"/>
+                                                </label>
+                                            </div>
+                                            <div class="textbox textbox_size_s">
+                                                <label class="textbox__wrapper">
+                                                    <div class="textbox__label">Описание статуса
+                                                    </div>
+                                                    <textarea class="textbox__input" placeholder="Описание статуса"></textarea>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="dialog-deal-status__buttons"><a class="button button_size_xs" href="#">
+                                                <svg class="icon icon_type_check">
+                                                    <use xlink:href="i/sprite/sprite.svg#check"></use>
+                                                </svg><span>Сохранить</span></a><a class="button button_size_xs button_transparent button_color_secondary" href="#">
+                                                <svg class="icon icon_type_x">
+                                                    <use xlink:href="i/sprite/sprite.svg#x"></use>
+                                                </svg><span>Отменить</span></a>
+                                        </div>
+                                    </div>
+                                </div><a class="button button_no-text button_transparent button_size_s" href="#">
+                                    <svg class="icon icon_type_plus-circle">
+                                        <use xlink:href="i/sprite/sprite.svg#plus-circle"></use>
+                                    </svg></a>
+                                <div class="dialog-deal-status">
+                                    <div class="dialog-deal-status__fixed-state-wrapper">
+                                        <div class="dialog-deal-status__title">4
+                                            /
+                                            Выполнена
+                                        </div>
+                                        <div class="dialog-deal-status__description">Статус по-умолчанию для новой создаваемой сделки
+                                        </div>
+                                        <div class="dialog-deal-status__buttons"><a class="button button_size_xs" href="#">
+                                                <svg class="icon icon_type_pencil">
+                                                    <use xlink:href="i/sprite/sprite.svg#pencil"></use>
+                                                </svg><span>Изменить</span></a>
+                                        </div>
+                                    </div>
+                                    <div class="dialog-deal-status__editable-state-wrapper">
+                                        <div class="dialog-deal-status__close">
+                                            <svg class="icon_size_xs icon icon_type_x">
+                                                <use xlink:href="i/sprite/sprite.svg#x"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="dialog-deal-status__fields">
+                                            <div class="textbox textbox_size_s">
+                                                <label class="textbox__wrapper">
+                                                    <div class="textbox__label">Название статуса
+                                                    </div>
+                                                    <input class="textbox__input" type="text" placeholder="Название статуса" value="Выполнена"/>
+                                                </label>
+                                            </div>
+                                            <div class="textbox textbox_size_s">
+                                                <label class="textbox__wrapper">
+                                                    <div class="textbox__label">Описание статуса
+                                                    </div>
+                                                    <textarea class="textbox__input" placeholder="Описание статуса"></textarea>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="dialog-deal-status__buttons"><a class="button button_size_xs" href="#">
+                                                <svg class="icon icon_type_check">
+                                                    <use xlink:href="i/sprite/sprite.svg#check"></use>
+                                                </svg><span>Сохранить</span></a><a class="button button_size_xs button_transparent button_color_secondary" href="#">
+                                                <svg class="icon icon_type_x">
+                                                    <use xlink:href="i/sprite/sprite.svg#x"></use>
+                                                </svg><span>Отменить</span></a>
+                                        </div>
+                                    </div>
+                                </div><a class="button button_no-text button_transparent button_size_s" href="#">
+                                    <svg class="icon icon_type_plus-circle">
+                                        <use xlink:href="i/sprite/sprite.svg#plus-circle"></use>
+                                    </svg></a>
+                                <div class="dialog-deal-status">
+                                    <div class="dialog-deal-status__fixed-state-wrapper">
+                                        <div class="dialog-deal-status__title">5
+                                            /
+                                            Завершена
+                                        </div>
+                                        <div class="dialog-deal-status__description">Статус по-умолчанию для новой создаваемой сделки
+                                        </div>
+                                        <div class="dialog-deal-status__buttons"><a class="button button_size_xs" href="#">
+                                                <svg class="icon icon_type_pencil">
+                                                    <use xlink:href="i/sprite/sprite.svg#pencil"></use>
+                                                </svg><span>Изменить</span></a>
+                                        </div>
+                                    </div>
+                                    <div class="dialog-deal-status__editable-state-wrapper">
+                                        <div class="dialog-deal-status__close">
+                                            <svg class="icon_size_xs icon icon_type_x">
+                                                <use xlink:href="i/sprite/sprite.svg#x"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="dialog-deal-status__fields">
+                                            <div class="textbox textbox_size_s">
+                                                <label class="textbox__wrapper">
+                                                    <div class="textbox__label">Название статуса
+                                                    </div>
+                                                    <input class="textbox__input" type="text" placeholder="Название статуса" value="Завершена"/>
+                                                </label>
+                                            </div>
+                                            <div class="textbox textbox_size_s">
+                                                <label class="textbox__wrapper">
+                                                    <div class="textbox__label">Описание статуса
+                                                    </div>
+                                                    <textarea class="textbox__input" placeholder="Описание статуса"></textarea>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="dialog-deal-status__buttons"><a class="button button_size_xs" href="#">
+                                                <svg class="icon icon_type_check">
+                                                    <use xlink:href="i/sprite/sprite.svg#check"></use>
+                                                </svg><span>Сохранить</span></a><a class="button button_size_xs button_transparent button_color_secondary" href="#">
+                                                <svg class="icon icon_type_x">
+                                                    <use xlink:href="i/sprite/sprite.svg#x"></use>
+                                                </svg><span>Отменить</span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer class="footer">
+                <div class="footer__copyright">&copy;2019-2022 Company Name
+                </div>
+                <div class="footer__items-group">
+                    <div class="footer__item"><a class="footer__link" href="#">Ссылка</a>
+                    </div>
+                    <div class="footer__item"><a class="footer__link" href="#">Техподдержка</a>
+                    </div>
+                </div>
+                <div class="footer__item">
+                    Построено на
+                    <a class="footer__link" href="#">OpenCRM</a>
+                </div>
+            </footer>
+        </div>
+        <script src="js/app.bundle.js"></script>
+    </body>
+</html>
