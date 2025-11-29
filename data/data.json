@@ -1,0 +1,83 @@
+{
+    "users": [
+        {
+            "id": 1,
+            "name": "Иван Иванов",
+            "email": "ivan@example.com",
+            "role": "Администратор",
+            "phone": "+7 900 000-00-01"
+        },
+        {
+            "id": 2,
+            "name": "Мария Смирнова",
+            "email": "maria@example.com",
+            "role": "Менеджер",
+            "phone": "+7 900 000-00-02"
+        }
+    ],
+    "company-groups": [
+        {
+            "id": 1,
+            "name": "Группа Альфа",
+            "description": "Девелоперские проекты в Москве"
+        },
+        {
+            "id": 2,
+            "name": "Группа Бета",
+            "description": "Региональные проекты"
+        }
+    ],
+    "contractors": [
+        {
+            "id": 1,
+            "name": "ООО «Альфа Строй»",
+            "company_group_id": 1,
+            "type": "Подрядчик"
+        },
+        {
+            "id": 2,
+            "name": "ООО «Бета Инвест»",
+            "company_group_id": 2,
+            "type": "Клиент"
+        }
+    ],
+    "contracts": [
+        {
+            "id": 1,
+            "title": "Подряд на строительство",
+            "contractor_id": 1,
+            "value": 15000000
+        }
+    ],
+    "deals": [
+        {
+            "id": 1,
+            "title": "Поставка материалов",
+            "status_id": 1,
+            "value": 3500000
+        },
+        {
+            "id": 2,
+            "title": "Продажа земельного участка",
+            "status_id": 2,
+            "value": 48000000
+        }
+    ],
+    "deal-statuses": [
+        {
+            "id": 1,
+            "name": "Новая",
+            "color": "#0ea5e9"
+        },
+        {
+            "id": 2,
+            "name": "В работе",
+            "color": "#22c55e"
+        },
+        {
+            "id": 3,
+            "name": "Закрыта",
+            "color": "#475569"
+        }
+    ]
+}
